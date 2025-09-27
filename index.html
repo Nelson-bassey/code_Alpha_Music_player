@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="assets/phone 9.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <img src="playlist.svg" alt="playlist" id="playlist-img" />
+      <h2>FEEL THE MUSIC</h2>
+      <img src="music.svg" alt="music" id="music-img" />
+    </header>
+
+    <main>
+      <!-- the left section -->
+      <div class="left">
+        <div class="song-image">
+          <img src="assets/musicanim.webp" alt="anim" id="musicanim">
+        </div>
+        <div class="volume-div">
+          <div class="volume-img">
+            <img src="volume.svg" alt="volume" id="vol-svg"/>
+          </div>
+          <input type="range" id="volume-range"  onchange="volume()" min="0" max="100" value="100"/>
+        </div>
+      </div>
+
+      <!-- the right section -->
+      <div class="right">
+        <div class="details">
+          <h3 id="song-name">Love</h3>
+          <h5 id="song-singer">Burna Boy</h5>
+        </div>
+        <input type="range" id="song-duration" onchange="duration()" min="0" max="100" value="100" />
+        <!-- music controls  -->
+        <div class="controls">
+          <div class="prev-img">
+            <img src="prev.svg" alt="prev" id="prev-img" 
+            onclick="previousSong()"/>
+          </div>
+
+          <div class="play-pause">
+            <img src="play.svg" alt="play" id="play-pause" 
+            onclick="playPause()"/>
+          </div>
+
+          <div class="next">
+            <img src="next.svg" alt="next" id="next-img" 
+            onclick="nextSong()"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- the playlist that appears like a lightbox by the left of the screen  -->
+      <div class="playlist">
+        <div class="playlist-song">
+          <img src="assets/ejiyk.jpeg" alt="img">
+          <div class="song-details">
+            <h2>PURPLE VALENTINE</h2>
+            <h5>EJIYK</h5>
+          </div>
+        </div>
+
+
+        <div class="playlist-song">
+          <img src="assets/omah lay.jpeg" alt="img">
+          <div class="song-details">
+            <h2>WITH YOU</h2>
+            <h5>OMAH LAY FT DAVIDO</h5>
+        </div>
+        </div>
+        
+
+        <div class="playlist-song">
+          <img src="assets/burna.jpeg" alt="img">
+          <div class="song-details">
+            <h2>LOVE</h2>
+            <h5>BURNA BOY</h5>
+        </div>
+        </div>
+
+        <div class="playlist-song">
+          <img src="assets/paddy.jfif" alt="img">
+          <div class="song-details">
+            <h2>LIKE I WANT YOU </h2>
+            <h5>BRUNO MARS</h5>
+        </div>
+        </div>
+
+        <div class="playlist-song">
+          <img src="assets/yea.jpg" alt="img">
+          <div class="song-details">
+            <h2>LOVE MASHUP </h2>
+            <h5>SICKVED</h5>
+        </div>
+        </div>
+
+        <div class="playlist-song">
+          <img src="assets/phone2.jpg" alt="img">
+          <div class="song-details">
+            <h2>SAD LOVE SONG </h2>
+            <h5>NIEXSHADOW</h5>
+        </div>
+        </div>
+
+        <div class="playlist-song">
+          <img src="assets/car 9.jpg" alt="img">
+          <div class="song-details">
+            <h2>SAD MASHUP</h2>
+            <h5>LOFI</h5>
+        </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
