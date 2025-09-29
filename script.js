@@ -20,12 +20,6 @@ let songs = [
         singer: "Ejiyk",
     },
     {
-        name: "With You",
-        path: "assets/With You.mp3",
-        image: "assets/omah lay.jpeg",
-        singer: "Omah Lay ft Davido",
-    },
-    {
         name: "Love",
         path: "assets/love.mp3",
         image: "assets/burna.jpeg",
