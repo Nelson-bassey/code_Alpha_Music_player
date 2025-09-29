@@ -44,12 +44,6 @@ let songs = [
         singer: "Sickved",
     },
     {
-        name: "Sad Love Song",
-        path: "assets/sad love.mp3",
-        image: "assets/phone2.jpg",
-        singer: "NiExshadow",
-    },
-    {
         name: "Sad Mashup",
         path: "assets/lofi.mp3",
         image: "assets/car 9.jpg",
